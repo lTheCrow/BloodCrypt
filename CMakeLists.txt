@@ -5,4 +5,7 @@ project(BloodCrypt)
 find_library(USER32 user32)
 list(APPEND USBHID_LIB_DEPS ${USER32})
 
-add_executable(Blood WIN32 blood/blood.c blood/sample.rc)
+add_subdirectory(misc)
+
+# entry point
+add_subdirectory(core)
