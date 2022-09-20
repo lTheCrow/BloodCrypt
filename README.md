@@ -2,8 +2,6 @@
 
 BloodCrypt is a multiplatform open source ransomware for learning/testing purposes.
 
-Disclaimer: We don't 
-
 ## Supported Platforms
 - Windows
 - Linux (not yet)
