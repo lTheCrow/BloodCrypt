@@ -1,8 +1,23 @@
 # BloodCrypt Open Source Ransomware
 
-Compilar usando x64 Native Tools Command Prompt for VS 2022
-o abrir vcvars64 o algo asi
+BloodCrypt is a multiplatform open source ransomware for learning/testing purposes.
 
-y ejecutar build.bat y ya
+Disclaimer: We don't 
 
-Ah por cierto, deben crear el directorio build antes :)
+## Supported Platforms
+- Windows
+- Linux (not yet)
+
+## How to build -- Windows
+These commands are tested with Visual Studio's Cmake tool.
+
+```
+cd build
+cmake ..
+cmake --build . --config Release
+```
+
+The executable file is named BloodCrypt.exe
+
+## Disclaimer
+Any misuse given with this software is not the responsibility of the author or contributors to the repository.
