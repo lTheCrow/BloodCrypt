@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pruebas de Ingreso</title>
+
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+  <h1>Pruebas</h1>
+  <nav>
+    <ul>
+      <li><a href="../../">Inicio</a></li>
+      <li><a href="./">Pruebas</a></li>
+      <li><a href="../documentacion/">Documentacion</a></li>
+    </ul>
+  </nav>
+
+  <h2>Reto 1: Hola Mundo</h2>
+  <p>Crear un programa que muestre algun texto en consola.</p>
+  <ol>
+    <li>Crear un archivo llamado <code>hello.c</code> donde se escribira el programa</li>
+    <li>Compilar el archivo ya sea usando el GCC de MinGW o CL (el compilador de Microsoft que viene con Visual Studio)
+    </li>
+    <li>Enlazar el archivo y que el nombre del output sea <code>hello.exe</code></li>
+  </ol>
+
+  <h2>Reto 2: Conversion de Temperatura</h2>
+  <p>Crear un programa que convierta el valor numerico en Fahrenheit dado por un usuario a Celsius</p>
+  <p>El programa debe recibir una entrada por teclado con un numero ya sea entero o flotante</p>
+  <p>La entrada puede ser de tipo entero o flotante pero la salida solo puede ser de flotante y con 3 decimales despues
+    de la coma</p>
+  <p>No les dare la formula, eso lo van a tener que investigar ustedes :)</p>
+
+  <p>Ejemplo:</p>
+  <code>
+      Input: 49.319 <br>
+      Output: 9.622 <br>
+      <br>
+      Input: 69 <br>
+      Output: 20.5556 <br>
+    </code>
+
+  <ol>
+    <li>Crear un archivo llamado <code>temp.c</code> donde se escribira el programa</li>
+    <li>Compilar el archivo ya sea usando el GCC de MinGW o CL (el compilador de Microsoft que viene con Visual Studio)
+    </li>
+    <li>Enlazar el archivo y que el nombre del output sea <code>temp.exe</code></li>
+  </ol>
+
+  <h2>Reto 3: Registro de Usuarios</h2>
+  <p>Crear un programa que tenga un prompt ($>) que muestre dos opciones, si iniciar sesion, registrarse o salir</p>
+  <p>Al registrar un usuario, los datos se guardaran en un archivo, este archivo despues debe ser usado para iniciar
+    sesion</p>
+  <p>Cualquier detalle agregado sera valorado ;)</p>
+
+  <p>El siguiente es un ejemplo que muestra todas las caracteristicas del programa:</p>
+  <code>
+      > superlogin.exe <br>
+      --- SuperLogin --- <br>
+      1. Iniciar Sesion <br>
+      2. Registrarse <br>
+      3. Salir <br>
+      $> 2<br>
+      Nombre de Usuario: <span style="color:#441eb8;">JohnDoe69</span> <br>
+      Clave: <span style="color:#441eb8;">1234</span> <br>
+      [+] Usuario Registrado ! <br>
+      --- SuperLogin --- <br>
+      1. Iniciar Sesion <br>
+      2. Registrarse <br>
+      3. Salir <br>
+      $> 3<br>
+      > superlogin.exe <br>
+      --- SuperLogin --- <br>
+      1. Iniciar Sesion <br>
+      2. Registrarse <br>
+      3. Salir <br>
+      $> 1<br>
+      Nombre de Usuario: <span style="color:#441eb8;">JohnDoe69</span> <br>
+      Clave: <span style="color:#441eb8;">4321</span> <br>
+      [+] Datos Incorrectos ! <br>
+      --- SuperLogin --- <br>
+      1. Iniciar Sesion <br>
+      2. Registrarse <br>
+      3. Salir <br>
+      $> 1<br>
+      Nombre de Usuario: <span style="color:#441eb8;">JohnDoe69</span> <br>
+      Clave: <span style="color:#441eb8;">1234</span> <br>
+      [+] Los datos son correctos, iniciando sesion 
+      --- Bienvenido al sistema JohnDoe69 ---
+      > 
+    </code>
+
+  <ol>
+    <li>Crear un archivo llamado <code>superlogin.c</code> donde se escribira el programa</li>
+    <li>Compilar el archivo ya sea usando el GCC de MinGW o CL (el compilador de Microsoft que viene con Visual Studio)
+    </li>
+    <li>Enlazar el archivo y que el nombre del output sea <code>superlogin.exe</code></li>
+  </ol>
+
+  <footer>
+    <hr>
+    <p>Si no puedes o te cuesta mucho completar los retos, te recomiendo leer este libro: <a href="https://drive.google.com/file/d/11kYCARxv6dR5uDsZp_a6hbDJgw6Rrnc_/view?usp=sharing">The C Programming Language (2nd Edition) by Brian Kernighan & Dennis Ritchie</a></p>
+  </footer>
+</body>
+
+</html>

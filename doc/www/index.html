@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodCrypt</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body id="bodyId">
+  <h1>Proyecto BloodCrypt</h1>
+
+  <nav>
+    <ul>
+      <li><a href="./">Inicio</a></li>
+      <li><a href="views/pruebas/">Pruebas</a></li>
+      <li><a href="views/documentacion/">Documentacion</a></li>
+    </ul>
+  </nav>
+  
+  <p>Repositorio de GitHub: <a target="_blank" href="https://github.com/lTheCrow/BloodCrypt">BloodCrypt</a></p>
+
+  <section>
+    <h2>Sobre el proyecto</h2>
+    <p>
+      El proyecto BloodCrypt es un ransomware que va a estar hecho en C destinado a computadoras con Windows instalado. El objetivo de esto no es ganar dinero, si no, aprender a desarrollar malware utilizando las herramientas que utilizaria un desarrollador de malware en la vida real. 
+    </p>
+  </section>
+
+  <section>
+    <h2>Quienes podran participar en el proyecto</h2>
+    <p>
+      Ya que es un proyecto de aprendizaje no voy a poner muchos requisitos. Basicamente los que quieran participar deben tener lo siguiente:
+    </p>
+    <ul>
+      <li>Tener una computadora con procesador de arquitectura Intel x86-64 o AMD64</li>
+      <li>Tener alguna version de Windows 7/8/10/11, ya que el malware que haremos estara hecho en el</li>
+      <li>Es recomendable poder ejecutar una maquina virtual con otro Windows</li>
+      <li>Tener un nivel de ingles B1 o superior, basicamente que pueda leer textos en ingles (aunque le cueste un poco)</li>
+      <li>Saber el lenguaje C en un nivel muy basico, que sepa hacer un hello world, usar variables, operaciones aritmetico-logicas y mas caracteristicas basicas del lenguaje</li>
+      <li>Tener un interes enorme sobre algun tema relacionado a:</li>
+      <ul>
+        <li>Ingenieria Inversa</li>
+        <li>Analisis y Desarrollo de Malware</li>
+        <li>Explotacion Binaria y Desarrollo de Exploits a bajo nivel</li>
+        <li>Evasion de Antivirus</li>
+        <li>Programacion en C y lenguaje Ensamblador</li>
+        <li>Desarrollo de Sistemas Operativos</li>
+      </ul>
+      <li>Tener ganas de aprender con el proyecto. Este requisito no es de relleno, de verdad les pido que si piden para participar sean serios y aun si no saben mucho que tengan la voluntad de aprender todos los dias aunque sea un poco para despues aportar al proyecto, con eso me vale</li>
+    </ul>
+    
+    <p>
+      Para poder participar, debes cumplir con los requisitos anteriores, pero para eso tambien debes verificar que realmente los cumples. Eso lo verificare con tres pequeños retos, estos retos los deberan solucionar leyendo las consigna, ejecutar y mandar el codigo en pastebin (https://pastebin.com/) con la captura adjunta del programa ejecutado. Estos retos seran encontrados en <a href="./views/pruebas/">&gt;&gt;&gt; Pruebas &lt;&lt;&lt;</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Caracteristicas de BloodCrypt</h2>
+
+    <h3>BloodCrypt v1.0</h3>
+    <p>Para ya fijar varios objetivos, voy a poner las caracteristicas que debera tener la version 1 del ransomware. Cualquier modificacion o idea que quieran hacer pueden notificarme, mis datos de contacto estan abajo :).</p>
+    <ul>
+      <li>Ejecutarse en el sistema operativo Windows bajo procesadores de arquitectura Intel x86-64 y AMD64</li>
+      <li>Crear una clave aleatoria para encriptar con AES</li>
+      <li>Encriptar archivos utilizando el algoritmo AES256</li>
+      <li>Al encriptar un archivo se escribira en un archivo el directorio de ese archivo</li>
+      <li>Esa clave aleatoria se cifrara con algun algoritmo ya que despues se mostrara a la victima</li>
+      <li>Al encriptar los archivos, se le mostrara una wallet de bitcoin y la clave cifrada</li>
+      <li>Al recibir el pago, la victima enviaria por correo la clave cifrada para que con un programa de nuestro dominio descifre nuestro algoritmo y le respondamos el correo con la clave</li>
+      <li>La victima abriria otro archivo ejecutable donde pondria la clave, este se encargara de desencriptar los archivos registrados en el archivo</li>
+    </ul>
+  </section>
+
+  <footer>
+    <hr>
+    <p>Por cualquier consulta contactarme en WhatsApp: <a href="https://wa.me/+48459435007">+48 45 943 50 07</a></p>
+  </footer>
+</body>
+
+</html>
